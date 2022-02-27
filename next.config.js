@@ -7,5 +7,15 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   images: {
     domains: ['pbs.twimg.com']
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination:
+          'https://playground-blog.super.site/',
+        permanent: true,
+      },
+    ];
+  },
 })
