@@ -11,9 +11,9 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
-        source: '/',
+        source: '/:path*',
         destination:
-          'https://playground-blog.super.site/',
+          'https://playground-blog.super.site/:path*',
         permanent: true,
       },
     ];
