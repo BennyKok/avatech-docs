@@ -13,7 +13,7 @@ module.exports = withBundleAnalyzer({
       {
         source: '/:path*',
         destination:
-          'https://playground-blog.super.site/:path*',
+          'https://playground-docs.gitbook.io/:path*',
         permanent: true,
       },
     ];
